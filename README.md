@@ -1,2 +1,2 @@
 # BlaconzOS
-Cringe OS
+Quite incredibly cringe OS
