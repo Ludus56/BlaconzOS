@@ -566,7 +566,7 @@ namespace BlaconzOS
             }
             else if (ResponseDir == "help")
             {
-
+                Console.WriteLine("");
             }
            
             else if (ResponseDir == "Exit")
@@ -581,9 +581,50 @@ namespace BlaconzOS
             }
             else if (ResponseDir == "Notes")
             {
-               //String Cheese = "Font";
-                //return Cheese;
-                //cheese
+                Console.WriteLine("Select notes: [1], [2], [3], [4], [5], [7], [8], [9], [10].");
+                string Notesel = (Console.ReadLine());
+                if (Notesel == "1")
+                {
+                    Console.WriteLine(":Writing apparatus terminal:");
+                    TextWriter Nsave = new StreamWriter("SaveNotes1.txt");
+                }
+                if (Notesel == "2")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes2.txt");
+                }
+                if (Notesel == "3")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes3.txt");
+                }
+                if (Notesel == "4")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes4.txt");
+                }
+                if (Notesel == "5")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes5.txt");
+                }
+                if (Notesel == "6")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes6.txt");
+                }
+                if (Notesel == "7")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes7.txt");
+                }
+                if (Notesel == "8")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes8.txt");
+                }
+                if (Notesel == "9")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes9.txt");
+                }
+                if (Notesel == "10")
+                {
+                    TextWriter Nsave = new StreamWriter("SaveNotes10.txt");
+                };
+
             };
         }
         
