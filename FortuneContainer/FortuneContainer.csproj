@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{360688B2-D9A1-49E5-B2B9-6D6D9BB3D647}</ProjectGuid>
+    <ProjectGuid>{064CB76F-4B81-42DE-87E1-669C52F1F5EE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TAP_RE</RootNamespace>
-    <AssemblyName>TAP_RE</AssemblyName>
+    <RootNamespace>FortuneContainer</RootNamespace>
+    <AssemblyName>FortuneContainer</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

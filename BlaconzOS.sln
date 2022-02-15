@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1500
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAP_RE", "TAP_RE\TAP_RE.csproj", "{360688B2-D9A1-49E5-B2B9-6D6D9BB3D647}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlaconzOS", "TAP_RE\BlaconzOS.csproj", "{360688B2-D9A1-49E5-B2B9-6D6D9BB3D647}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
