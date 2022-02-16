@@ -579,14 +579,17 @@ namespace BlaconzOS
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 SecondaryMain();
             }
-            else if (ResponseDir == "Notes")
+            else if (ResponseDir == "Notes" || ResponseDir == "notes")
             {
                 Console.WriteLine("Select notes: [1], [2], [3], [4], [5], [7], [8], [9], [10].");
                 string Notesel = (Console.ReadLine());
                 if (Notesel == "1")
                 {
                     Console.WriteLine(":Writing apparatus terminal:");
+                    string oneres = (Console.ReadLine());
                     TextWriter Nsave = new StreamWriter("SaveNotes1.txt");
+                    Nsave.WriteLine(oneres);
+                    Nsave.Close();
                 }
                 if (Notesel == "2")
                 {
