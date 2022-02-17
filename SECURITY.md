@@ -6,4 +6,4 @@ There is no formal supported version list. Support may or may not be available. 
 
 ## Reporting a Vulnerability
 
-Please go to the issues section
+Please report it as an issue in the issues tab
