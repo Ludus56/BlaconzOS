@@ -581,15 +581,33 @@ namespace BlaconzOS
             }
             else if (ResponseDir == "Notes" || ResponseDir == "notes")
             {
-                Console.WriteLine("Select notes: [1], [2], [3], [4], [5], [7], [8], [9], [10].");
+                NotesSpace();
+            };
+        }
+        public static void NotesSpace()
+        {
+            
+                Console.WriteLine("\nSelect notes: [1], [2], [3], [4], [5], [7], [8], [9], [10].");
                 string Notesel = (Console.ReadLine());
                 if (Notesel == "1")
                 {
-                    Console.WriteLine(":Writing apparatus terminal:");
-                    string oneres = (Console.ReadLine());
-                    TextWriter Nsave = new StreamWriter("SaveNotes1.txt");
-                    Nsave.WriteLine(oneres);
-                    Nsave.Close();
+                    Console.WriteLine("\n'Read' saved or 'Write' new");
+                    string onereact = (Console.ReadLine());
+                    if (onereact == "Write" || onereact == "write")
+                    {
+                        Console.WriteLine("\n:Writing terminal:");
+                        string oneres = (Console.ReadLine());
+                        TextWriter Nsave = new StreamWriter("SaveNotes1.txt");
+                        Nsave.WriteLine(oneres);
+                        Nsave.Close();
+                    }
+                    if (onereact == "Read" || onereact == "read")
+                    {
+                        TextReader Nread = new StreamReader("SaveNotes1.txt");
+                        string ReadNoteOne = Nread.ReadLine();
+                        Console.WriteLine(ReadNoteOne);
+                        Nread.Close();
+                    }
                 }
                 if (Notesel == "2")
                 {
@@ -627,9 +645,10 @@ namespace BlaconzOS
                 {
                     TextWriter Nsave = new StreamWriter("SaveNotes10.txt");
                 };
-
-            };
         }
-        
+        public static void NotePort()
+        {
+            NotesSpace();
+        }
     }
 }
